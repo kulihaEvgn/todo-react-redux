@@ -82,6 +82,9 @@ const TodoListItem = ({ text, done, id }) => {
     if (text.length > 40) {
         smallText = text.slice(0, 40) + ' . . .'
     }
+    else {
+        smallText = text
+    }
     const dispatch = useDispatch()
 
     const inputRef = useRef()
